@@ -23,9 +23,9 @@ const clientId = "BMvBAJWPhYJ-WbcMh6fgVBPjEE-Vixr2TF9BgOpzbbELTgKjSzb1aDUTWEVDir
 
 const chainConfig = {
   chainNamespace: CHAIN_NAMESPACES.EIP155,
-  chainId: "0xaa36a7",
-  rpcTarget: "https://rpc.ankr.com/eth_sepolia",
-  displayName: "Ethereum Sepolia mainnet",
+  chainId: "0xaa36a7", // Sepolia testnet
+  rpcTarget: "https://rpc.ankr.com/eth_sepolia", // URL du RPC pour Sepolia
+  displayName: "Ethereum Sepolia Testnet",
   blockExplorerUrl: "https://sepolia.etherscan.io",
   ticker: "ETH",
   tickerName: "Ethereum",
@@ -38,7 +38,7 @@ const privateKeyProvider = new EthereumPrivateKeyProvider({
 
 const web3auth = new Web3Auth({
   clientId,
-  web3AuthNetwork: WEB3AUTH_NETWORK.TESTNET, // Changed from SAPPHIRE_MAINNET to TESTNET
+  web3AuthNetwork: WEB3AUTH_NETWORK.TESTNET, // Gardez TESTNET ici
   privateKeyProvider,
 });
 
