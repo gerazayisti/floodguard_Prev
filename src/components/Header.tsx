@@ -19,19 +19,18 @@ import { useMediaQuery } from "@/hooks/useMediaQuery"
 import { createUser, getUnreadNotifications, markNotificationAsRead, getUserByEmail, getUserBalance } from "@/utils/db/actions"
 import Image from "next/image"
 
-const clientId = "BJKdDFkNtkWX87XqkuWrDu4rbkSvWyQZ5lswS0ucINxxcN0inRVW8zzKAywPPzgiOHP7_3PcfFwfpvcQvSdaLRs";
+const clientId = "BACvvlYDfwq1-2Oxy5e6sjv5hBrloQboM255gh_H13dhpCiSXMA4Dlk3oLUytjHRJFx0xjNvnP3RnRbOxm_JKto";
 
 const chainConfig = {
   chainNamespace: CHAIN_NAMESPACES.EIP155,
-  chainId: "0xaa36a7",
-  rpcTarget: "https://rpc.ankr.com/eth_sepolia",
-  displayName: "Ethereum Sepolia mainnet",
-  blockExplorerUrl: "https://sepolia.etherscan.io",
+  chainId: "0x1", // ID de la chaîne pour Ethereum mainnet
+  rpcTarget: "https://rpc.ankr.com/eth", // RPC pour Ethereum mainnet
+  displayName: "Ethereum Mainnet", // Indiquer qu'il s'agit du mainnet
+  blockExplorerUrl: "https://etherscan.io", // Explorateur de blocs pour Ethereum mainnet
   ticker: "ETH",
   tickerName: "Ethereum",
   logo: "https://cryptologos.cc/logos/ethereum-eth-logo.png",
 };
-
 const privateKeyProvider = new EthereumPrivateKeyProvider({
   config: { chainConfig },
 });
