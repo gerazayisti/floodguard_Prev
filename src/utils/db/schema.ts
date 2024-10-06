@@ -88,3 +88,7 @@ export const zones = pgTable('zones', {
   lng: integer('lng').notNull(), // Longitude de la zone
   riskLevel: varchar('risk_level', { length: 50 }).notNull(), // Niveau de risque
 });
+
+export const getAllReportedZones = () => {
+  // code de la fonction
+};
