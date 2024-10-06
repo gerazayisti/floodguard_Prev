@@ -23,10 +23,10 @@ const clientId = "BACvvlYDfwq1-2Oxy5e6sjv5hBrloQboM255gh_H13dhpCiSXMA4Dlk3oLUytj
 
 const chainConfig = {
   chainNamespace: CHAIN_NAMESPACES.EIP155,
-  chainId: "0x1", // ID de la chaîne pour Ethereum mainnet
-  rpcTarget: "https://rpc.ankr.com/eth", // RPC pour Ethereum mainnet
-  displayName: "Ethereum Mainnet", // Indiquer qu'il s'agit du mainnet
-  blockExplorerUrl: "https://etherscan.io", // Explorateur de blocs pour Ethereum mainnet
+  chainId: "0xaa36a7", // ID de la chaîne pour Sepolia Testnet
+  rpcTarget: "https://rpc.ankr.com/eth_sepolia", // RPC pour Sepolia
+  displayName: "Ethereum Sepolia Testnet", // Correctement indiquer que c'est un testnet
+  blockExplorerUrl: "https://sepolia.etherscan.io", // Explorateur de blocs pour Sepolia
   ticker: "ETH",
   tickerName: "Ethereum",
   logo: "https://cryptologos.cc/logos/ethereum-eth-logo.png",
