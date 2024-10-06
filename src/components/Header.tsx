@@ -19,7 +19,7 @@ import { useMediaQuery } from "@/hooks/useMediaQuery"
 import { createUser, getUnreadNotifications, markNotificationAsRead, getUserByEmail, getUserBalance } from "@/utils/db/actions"
 import Image from "next/image"
 
-const clientId = "BACvvlYDfwq1-2Oxy5e6sjv5hBrloQboM255gh_H13dhpCiSXMA4Dlk3oLUytjHRJFx0xjNvnP3RnRbOxm_JKto";
+const clientId = "BMvBAJWPhYJ-WbcMh6fgVBPjEE-Vixr2TF9BgOpzbbELTgKjSzb1aDUTWEVDirSp8xAUK3a9gdJcuc554O7-EK0";
 
 const chainConfig = {
   chainNamespace: CHAIN_NAMESPACES.EIP155,
@@ -38,7 +38,7 @@ const privateKeyProvider = new EthereumPrivateKeyProvider({
 
 const web3auth = new Web3Auth({
   clientId,
-  web3AuthNetwork: WEB3AUTH_NETWORK.MAINNET, // Changed from SAPPHIRE_MAINNET to TESTNET
+  web3AuthNetwork: WEB3AUTH_NETWORK.TESTNET, // Changed from SAPPHIRE_MAINNET to TESTNET
   privateKeyProvider,
 });
 
