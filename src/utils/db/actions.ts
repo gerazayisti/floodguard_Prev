@@ -527,3 +527,7 @@ export async function getZones() {
     throw error;
   }
 }
+
+export const getAllReportedZones = () => {
+  // code de la fonction
+};
